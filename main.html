@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>فروشگاه ستاره</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Mohammad Jafari" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-OXTEbYDqaX2ZY/BOaZV/yFGChYHtrXH2nyXJ372n2Y8abBhrqacCEe+3qhSHtLjy"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./sass/css/style.css" />
+    <link rel="icon" href="./img/tab icon/yellow-star.png" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-light bg-light fixed-top p-3 pt-2 pb-0">
+        <div class="container-fluid justify-content-center">
+          <div class="full-width m-0">
+            <div class="row">
+              <div id="item-bar" class="col-3 p-0">
+                <div class="container p-0">
+                  <div
+                    class="row d-flex justify-content-center align-items-center"
+                  >
+                    <a
+                      class="col d-flex justify-content-center align-items-center text-decoration-none link-dark p-0"
+                      href="./basket.html"
+                      ><p id="item-text-shop" class="m-0 ms-1 p-0">سبد خرید</p>
+                      <i class="bi bi-basket2-fill fs-1 mt-2"></i
+                    ></a>
+                    <a
+                      class="col d-flex justify-content-start align-items-center text-decoration-none link-dark ps-3"
+                      href="javascript:void(0)"
+                      id="profile_icon"
+                      ><p id="item-text-person" class="m-0 ms-1 p-0">
+                        حساب کاربری
+                      </p>
+                      <i class="bi bi-person-circle fs-1 mt-2"></i>
+                    </a>
+                    <div id="myModal" class="modaal">
+                      <form onsubmit="return false" id="login" dir="rtl">
+                        <label for="email" class="mb-1">ایمیل</label>
+                        <input
+                          type="email"
+                          class="form-control mb-1"
+                          name="email"
+                          id="email"
+                          required
+                        />
+                        <label for="email" class="mb-1">رمز عبور</label>
+                        <input
+                          type="password"
+                          class="form-control"
+                          name="password"
+                          id="password"
+                          required
+                        />
+                        <p><br /></p>
+                        <input
+                          id="loginsubmit"
+                          type="submit"
+                          class="btn"
+                          value="ورود"
+                        />
+                        <a
+                          class="ms-4"
+                          href="./signup.html"
+                          style="color: white; text-decoration: none"
+                          >ایجاد حساب کاربری</a
+                        >
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="brand" class="d-flex justify-content-center col">
+                <a class="navbar-brand" href="#"
+                  >ستاره<i class="bi bi-star-fill"></i
+                ></a>
+              </div>
+              <div
+                id="hamberger-menu"
+                class="col d-flex justify-content-end align-items-center p-0"
+              >
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+              <div
+                class="offcanvas offcanvas-start"
+                tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                    <a class="navbar-brand" href="./main.html"
+                      >ستاره<i class="bi bi-star-fill"></i
+                    ></a>
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close text-reset"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <form class="d-flex mb-4" lang="fa" dir="rtl">
+                      <button class="btn btn-outline-success" type="submit">
+                        جستجو
+                      </button>
+                      <input
+                        class="form-control ms-2"
+                        type="search"
+                        placeholder="کالای مورد نظر را وارد کنید"
+                        aria-label="Search"
+                      />
+                    </form>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="offcanvasNavbarDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <div class="pbox">
+                          <p class="text-danger">لباس مردانه</p>
+                        </div>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="offcanvasNavbarDropdown"
+                      >
+                        <li><a class="dropdown-item" href="#">شلوار</a></li>
+                        <li><a class="dropdown-item" href="#">پیراهن</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">پلیور و سویشرت</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">تیشرت و پولوشرت</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">کاپشن</a></li>
+                        <li><a class="dropdown-item" href="#">کت تک</a></li>
+                        <li><a class="dropdown-item" href="#">شلوارک</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="offcanvasNavbarDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <div class="pbox">
+                          <p class="text-danger">لباس زنانه</p>
+                        </div>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="offcanvasNavbarDropdown"
+                      >
+                        <li><a class="dropdown-item" href="#">مانتو</a></li>
+                        <li><a class="dropdown-item" href="#">شلوار</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">بلوز و تونیک</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">بافت و سویشرت</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >پالتو، کاپشن و بارانی</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >لباس مجلسی و پیراهن</a
+                          >
+                        </li>
+                        <li><a class="dropdown-item" href="#">دامن</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="offcanvasNavbarDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        <div class="pbox">
+                          <p class="text-danger">لباس بچه گانه</p>
+                        </div>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="offcanvasNavbarDropdown"
+                      >
+                        <div class="pbox">
+                          <p class="ms-2 text-danger">لباس دخترانه</p>
+                        </div>
+                        <li>
+                          <a class="dropdown-item" href="#">بلوز و پیراهن</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">شلوار و دامن</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">پلیور و سویشرت</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">پالتو و کاپشن</a>
+                        </li>
+                        <li>
+                          <hr class="dropdown-divider" />
+                        </li>
+                        <div class="pbox">
+                          <p class="ms-2 text-danger">لباس پسرانه</p>
+                        </div>
+                        <li><a class="dropdown-item" href="#">پیراهن</a></li>
+                        <li><a class="dropdown-item" href="#">تیشرت</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >پلیور ،ژاکت و سویشرت</a
+                          >
+                        </li>
+                        <li><a class="dropdown-item" href="#">کاپشن</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">شلوار و شلوارک</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <nav
+      id="under-header-nav"
+      class="navbar navbar-expand-lg navbar-dark bg-dark"
+    >
+      <div class="container-fluid pe-3 ps-3">
+        <form class="d-flex" lang="fa" dir="rtl">
+          <button class="btn btn-outline-success white-font" type="submit">
+            جستجو
+          </button>
+          <input
+            class="form-control ms-2"
+            type="search"
+            placeholder="جستجو کنید"
+            aria-label="Search"
+          />
+        </form>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav d-flex">
+            <li class="nav-item ms-2">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle white-font"
+                  type="button"
+                  id="dropdownMenuButton2"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  بچگانه
+                </button>
+                <ul
+                  class="dropdown-menu dropdown-menu-light"
+                  aria-labelledby="dropdownMenuButton2"
+                >
+                  <div class="pbox">
+                    <p class="ms-2 text-danger">دخترانه</p>
+                  </div>
+                  <li>
+                    <a class="dropdown-item" href="./filter.html"
+                      >بلوز و پیراهن</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./filter.html"
+                      >شلوار و دامن</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./filter.html"
+                      >پلیور و سویشرت</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./filter.html"
+                      >پالتو و کاپشن</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <div class="pbox">
+                    <p class="ms-2 text-danger">پسرانه</p>
+                  </div>
+                  <li>
+                    <a class="dropdown-item" href="./filter.html">پیراهن</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./filter.html">تیشرت</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./filter.html"
+                      >پلیور ،ژاکت و سویشرت</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./filter.html">کاپشن</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./filter.html"
+                      >شلوار و شلوارک</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item ms-2">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle white-font"
+                  type="button"
+                  id="dropdownMenuButton2"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  زنانه
+                </button>
+                <ul
+                  class="dropdown-menu dropdown-menu-light"
+                  aria-labelledby="dropdownMenuButton2"
+                >
+                  <li>
+                    <a class="dropdown-item" href="./filter.html">مانتو</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./filter.html">شلوار</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./filter.html"
+                      >بلوز و تونیک</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./filter.html"
+                      >بافت و سویشرت</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./filter.html"
+                      >پالتو، کاپشن و بارانی</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./filter.html"
+                      >لباس مجلسی و پیراهن</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./filter.html">دامن</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle white-font"
+                  type="button"
+                  id="dropdownMenuButton2"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  مردانه
+                </button>
+                <ul
+                  class="dropdown-menu dropdown-menu-light"
+                  aria-labelledby="dropdownMenuButton2"
+                >
+                  <li>
+                    <a class="dropdown-item" href="./filter.html">شلوار</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./filter.html">پیراهن</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./filter.html"
+                      >پلیور و سویشرت</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./filter.html"
+                      >تیشرت و پولوشرت</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./filter.html">کاپشن</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./filter.html">کت تک</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./filter.html">شلوارک</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="d-flex full-width mt-5">
+      <div class="full-width ps-3 pe-3" id="grid-slide-container">
+        <div id="poster-box">
+          <div id="poster-top" class="">
+            <img
+              src="./img/Artboard_1_copy_2.jpg"
+              class="d-block w-100"
+              alt=""
+            />
+          </div>
+          <div class="poster-bot">
+            <img src="./img/Artboard_1_12.jpg" class="d-block w-100" alt="" />
+          </div>
+        </div>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/_-__5.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="./img/tile01.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/whomanity_1.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <section id="sticky_box">
+      <i class="bi bi-arrow-up"></i>
+    </section>
+    <section class="mt-5 w-100 ps-3 pe-3" id="offer-container">
+      <section id="offer-header">
+        <div><h5>پیشنهاد ها</h5></div>
+      </section>
+      <section id="offer-main" dir="rtl">
+        <div id="offer-nav" dir="rtl">
+          <div id="item1">
+            <a class="text-decoration-none active-1" href="javascript:void(0)"
+              >مردانه</a
+            >
+          </div>
+          <div id="item2">
+            <a class="text-decoration-none" href="javascript:void(0)">زنانه</a>
+          </div>
+          <div id="item3">
+            <a class="text-decoration-none" href="javascript:void(0)"
+              >بچه گانه</a
+            >
+          </div>
+        </div>
+        <div class="offers-box p-1" id="offer-1">
+          <div class="off-and-mark-box">
+            <div class="off-box"><p class="off-value white-font">10%</p></div>
+            <div class="mark-box"><p class="marks white-font">کیان</p></div>
+          </div>
+          <div
+            id="offerslider1"
+            class="carousel carousel-dark slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <a href="./product.html" style="width: 100%; height: 100%">
+                <div class="carousel-item active">
+                  <img
+                    src="./img/446584_main_1.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/446584_back_1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/446584_main_1.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </a>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#offerslider1"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#offerslider1"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div
+            class="blc-color txt-align-right discription-box"
+            title="زیرپوش مردانه نخی سفید فوگو آر ایکس"
+          >
+            <a class="text-decoration-none text-black discription-text"
+              >زیرپوش نخی</a
+            >
+          </div>
+          <div class="price-box">
+            <div class="price">
+              <p>80,000</p>
+            </div>
+            <div class="price-without-off">
+              <p>72,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="offers-box p-1" id="offer-2">
+          <div class="off-and-mark-box">
+            <div class="off-box"><p class="off-value white-font">10%</p></div>
+            <div class="mark-box"><p class="marks white-font">کیان</p></div>
+          </div>
+          <div
+            id="offerslider2"
+            class="carousel carousel-dark slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <a href="./product.html" style="width: 100%; height: 100%">
+                <div class="carousel-item active">
+                  <img
+                    src="./img/446584_main_1.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/446584_back_1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/446584_main_1.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </a>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#offerslider2"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#offerslider2"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div
+            class="blc-color txt-align-right discription-box"
+            title="زیرپوش مردانه نخی سفید فوگو آر ایکس"
+          >
+            <a class="text-decoration-none text-black discription-text"
+              >زیرپوش نخی</a
+            >
+          </div>
+          <div class="price-box">
+            <div class="price">
+              <p>80,000</p>
+            </div>
+            <div class="price-without-off">
+              <p>72,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="offers-box p-1" id="offer-3">
+          <div class="off-and-mark-box">
+            <div class="off-box"><p class="off-value white-font">10%</p></div>
+            <div class="mark-box"><p class="marks white-font">کیان</p></div>
+          </div>
+          <div
+            id="offerslider3"
+            class="carousel carousel-dark slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <a href="./product.html" style="width: 100%; height: 100%">
+                <div class="carousel-item active">
+                  <img
+                    src="./img/446584_main_1.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/446584_back_1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/446584_main_1.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </a>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#offerslider3"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#offerslider3"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div
+            class="blc-color txt-align-right discription-box"
+            title="زیرپوش مردانه نخی سفید فوگو آر ایکس"
+          >
+            <a class="text-decoration-none text-black discription-text"
+              >زیرپوش نخی</a
+            >
+          </div>
+          <div class="price-box">
+            <div class="price">
+              <p>80,000</p>
+            </div>
+            <div class="price-without-off">
+              <p>72,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="offers-box p-1" id="offer-4">
+          <div class="off-and-mark-box">
+            <div class="off-box"><p class="off-value white-font">10%</p></div>
+            <div class="mark-box"><p class="marks white-font">کیان</p></div>
+          </div>
+          <div
+            id="offerslider4"
+            class="carousel carousel-dark slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <a href="./product.html" style="width: 100%; height: 100%">
+                <div class="carousel-item active">
+                  <img
+                    src="./img/446584_main_1.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/446584_back_1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/446584_main_1.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </a>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#offerslider4"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#offerslider4"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div
+            class="blc-color txt-align-right discription-box"
+            title="زیرپوش مردانه نخی سفید فوگو آر ایکس"
+          >
+            <a class="text-decoration-none text-black discription-text"
+              >زیرپوش نخی</a
+            >
+          </div>
+          <div class="price-box">
+            <div class="price">
+              <p>80,000</p>
+            </div>
+            <div class="price-without-off">
+              <p>72,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="offers-box p-1" id="offer-5">
+          <div class="off-and-mark-box">
+            <div class="off-box"><p class="off-value white-font">10%</p></div>
+            <div class="mark-box"><p class="marks white-font">کیان</p></div>
+          </div>
+          <div
+            id="offerslider5"
+            class="carousel carousel-dark slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <a href="./product.html" style="width: 100%; height: 100%">
+                <div class="carousel-item active">
+                  <img
+                    src="./img/446584_main_1.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/446584_back_1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/446584_main_1.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </a>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#offerslider5"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#offerslider5"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div
+            class="blc-color txt-align-right discription-box"
+            title="زیرپوش مردانه نخی سفید فوگو آر ایکس"
+          >
+            <a class="text-decoration-none text-black discription-text"
+              >زیرپوش نخی</a
+            >
+          </div>
+          <div class="price-box">
+            <div class="price">
+              <p>80,000</p>
+            </div>
+            <div class="price-without-off">
+              <p>72,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="offers-box p-1" id="offer-6">
+          <div class="off-and-mark-box">
+            <div class="off-box"><p class="off-value white-font">10%</p></div>
+            <div class="mark-box"><p class="marks white-font">کیان</p></div>
+          </div>
+          <div
+            id="offerslider6"
+            class="carousel carousel-dark slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <a href="./product.html" style="width: 100%; height: 100%">
+                <div class="carousel-item active">
+                  <img
+                    src="./img/446584_main_1.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/446584_back_1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/446584_main_1.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </a>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#offerslider6"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#offerslider6"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div
+            class="blc-color txt-align-right discription-box"
+            title="زیرپوش مردانه نخی سفید فوگو آر ایکس"
+          >
+            <a class="text-decoration-none text-black discription-text"
+              >زیرپوش نخی</a
+            >
+          </div>
+          <div class="price-box">
+            <div class="price">
+              <p>80,000</p>
+            </div>
+            <div class="price-without-off">
+              <p>72,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="offers-box p-1" id="offer-7">
+          <div class="off-and-mark-box">
+            <div class="off-box"><p class="off-value white-font">10%</p></div>
+            <div class="mark-box"><p class="marks white-font">کیان</p></div>
+          </div>
+          <div
+            id="offerslider7"
+            class="carousel carousel-dark slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <a href="./product.html" style="width: 100%; height: 100%">
+                <div class="carousel-item active">
+                  <img
+                    src="./img/446584_main_1.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/446584_back_1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/446584_main_1.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </a>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#offerslider7"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#offerslider7"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div
+            class="blc-color txt-align-right discription-box"
+            title="زیرپوش مردانه نخی سفید فوگو آر ایکس"
+          >
+            <a class="text-decoration-none text-black discription-text"
+              >زیرپوش نخی</a
+            >
+          </div>
+          <div class="price-box">
+            <div class="price">
+              <p>80,000</p>
+            </div>
+            <div class="price-without-off">
+              <p>72,000</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <div class="mt-5 w-100 ps-3 pe-3" id="second-poster-container" dir="rtl">
+      <div id="seconde-poster-top" class="second-poster">
+        <img src="./img/second poster/Artboard_1.png" />
+      </div>
+      <div id="seconde-poster-bottom" class="second-poster">
+        <img src="./img/second poster/Artboard_2.png" />
+      </div>
+    </div>
+    <footer class="mt-5 ps-3 pe-3 pt-3 white-font" dir="rtl">
+      <section id="about-us">
+        <i class="bi bi-info-circle"></i>
+        <h5>
+          <a class="text-decoration-none white-font" href="#">درباره ما</a>
+        </h5>
+        <i class="bi bi-geo-alt"></i>
+        <p>دفتر مرکزی : مشهد ، هاشمیه13 ، پلاک3 ، واحد2</p>
+        <i class="bi bi-telephone"></i>
+        <h6>تلفن پشتیبانی :</h6>
+        <p id="phone-number">051-38264635</p>
+      </section>
+      <section id="customer-and-worktime">
+        <div id="costumer">
+          <h5>خدمات مشتریان</h5>
+          <p>
+            خدمات مشتریان ستاره آماده هرگونه پاسخگویی در زمینهی پیگیری، شکایات
+            درخواست برگشت سفارش و راهنمایی مورد نیاز مشتریان است.
+          </p>
+        </div>
+        <div id="worktime">
+          <p><span>ساعت کاری :</span> شنبه تا پنجشنبه از ساعت 8:30 الی 21</p>
+        </div>
+      </section>
+      <section id="social">
+        <div id="telegram">
+          <a class="text-decoration-none white-font" href="#">
+            <i class="bi bi-telegram"></i>
+          </a>
+        </div>
+        <div id="instagram">
+          <a class="text-decoration-none white-font" href="#">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+        <div id="whatsapp">
+          <a class="text-decoration-none white-font" href="#">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
+      </section>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/login.js"></script>
+  </body>
+</html>
