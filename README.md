@@ -4,13 +4,13 @@
 <img src="./ER-Diagram.png" width="100%">
 
 ## home page preview
-<img src="./home page.gif" width="100%">
+<img src="./gifs/home page.gif" width="100%">
 
 ## cart page preview
-<img src="./cart page.gif" width="100%">
+<img src="./gifs/cart page.gif" width="100%">
 
 ## signup page preview
-<img src="./signup page.gif" width="100%">
+<img src="./gifs/signup page.gif" width="100%">
 
 ## Initial setup
 1- Install XAMPP and start apache and mysql services.<br>
