@@ -1,4 +1,8 @@
 # clothing-store-website
+
+## ER Diagram
+<img src="./ER-Diagram.png" width="100%">
+
 ## Initial setup
 1- Install XAMPP and start apache and mysql services.<br>
 2- Open the browser and enter the address http://localhost/phpmyadmin/<br>
