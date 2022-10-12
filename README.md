@@ -1,15 +1,15 @@
-# clothing-store-website
+# Clothing-Store-Website
 
 ## ER Diagram
 <img src="./ER-Diagram.png" width="100%">
 
-## home page preview
+## Home Page Preview
 <img src="./gifs/home page.gif" width="100%">
 
-## cart page preview
+## Cart Page Preview
 <img src="./gifs/cart page.gif" width="100%">
 
-## signup page preview
+## Signup Page Preview
 <img src="./gifs/signup page.gif" width="100%">
 
 ## Initial setup
